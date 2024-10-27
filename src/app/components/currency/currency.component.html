@@ -1,0 +1,22 @@
+<div>
+  <label>Base Currency:</label>
+  <select id="baseCurrency" [(ngModel)]="baseCurrency">
+    <option value="INR">Indian Rupee (INR)</option>
+    <option value="USD">United States Dollar (USD)</option>
+    <option value="AED">United Arab Emirates Dirham (AED)</option>
+  </select>
+
+  <label>Target Currency:</label>
+  <select id="targetCurrency" [(ngModel)]="targetCurrency">
+    <option value="INR">Indian Rupee (INR)</option>
+    <option value="USD">United States Dollar (USD)</option>
+    <option value="AED">United Arab Emirates Dirham (AED)</option>
+  </select>
+
+  <label>Amount:</label>
+  <input type="number" [(ngModel)]="amount">
+
+  <button (click)="convertCurrency()">Convert</button>
+
+  <p>Converted Amount: {{ convertedAmount }}</p>
+</div>
